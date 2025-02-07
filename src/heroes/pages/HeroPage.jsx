@@ -1,3 +1,9 @@
+import { useParams } from "react-router";
+import { getHeroById } from "../helpers";
+
 export const HeroPage = () => {
-  return <h1>HeroPage</h1>;
+  const { id } = useParams();
+  const hero = getHeroById(id);
+  console.log(hero);
+  return <h1>{hero.superhero}</h1>;
 };
