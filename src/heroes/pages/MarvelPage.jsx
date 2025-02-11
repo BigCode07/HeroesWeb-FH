@@ -3,9 +3,12 @@ import { HeroList } from "../components";
 export const MarvelPage = () => {
   return (
     <>
-      <h1 className="mt-3">Marvel Comics</h1>
+      <img
+        src={`/./assets/heroes/585f9379cb11b227491c3583.png`}
+        alt="fondo"
+        className="img-fluid"
+      />
       <hr />
-
       <HeroList publisher="Marvel Comics" />
     </>
   );
