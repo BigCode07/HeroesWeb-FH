@@ -23,17 +23,16 @@ export const SearchPage = () => {
   };
 
   return (
-    <>
-      <h1>Search</h1>
+    <div className="container">
       <hr />
       <div className="row">
         <div className="col-5">
-          <h4>Searching</h4>
+          <h4>Busqueda</h4>
           <hr />
           <form onSubmit={onSearchSubmit} action="">
             <input
               type="text"
-              placeholder="Search Hero"
+              placeholder="Buscar Heroe"
               className="form-control"
               name="searchText"
               autoComplete="off"
@@ -45,11 +44,11 @@ export const SearchPage = () => {
             className="btn btn-outline-primary mt-1"
             onClick={onSearchSubmit}
           >
-            Search
+            Buscar
           </button>
         </div>
         <div className="col-7">
-          <h4>Results</h4>
+          <h4>Resultado</h4>
           <hr />
 
           {/* {q === "" ? (
@@ -66,14 +65,14 @@ export const SearchPage = () => {
             className="alert alert-primary"
             style={{ display: showSearch ? "" : "none" }}
           >
-            Search Hero
+            Busqueda Heroe
           </div>
 
           <div
             className="alert alert-danger"
             style={{ display: showError ? "" : "none" }}
           >
-            No Hero with <b>{q}</b>
+            No se encontro el Heroe <b>{q}</b>
           </div>
 
           {heroes.map((hero) => (
@@ -81,6 +80,6 @@ export const SearchPage = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };

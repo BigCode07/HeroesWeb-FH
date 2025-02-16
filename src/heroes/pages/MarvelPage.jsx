@@ -11,6 +11,7 @@ export const MarvelPage = () => {
           height: "20rem",
           objectFit: "cover",
           marginTop: "2rem",
+          borderRadius: "2rem",
         }}
       />
       <hr />
